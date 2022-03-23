@@ -14,13 +14,25 @@
 		<script type="text/javascript" src="story/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="story/love.min.js" charset="utf-8"></script>
 	    <style type="text/css">
+	<script>
+		    function audioAutoPlay(id) {
+		    	var dudio = document.getElementById(id);
+			audio.play();
+			    document.addEventListener("WeixinJSBridgeReady",function(){
+			    	audio.play();
+			    },false);
+			    document.addEventListener("YixinJSBridgeReady",function(){
+			    	audio.play();
+			    },false);
+		    }
+	</script>
 <!--
 .STYLE1 {color: #666666}
 -->
         </style>
 </head>
-    <body>
-			<audio autoplay="autoplay" loop="loop">
+    <body onload="audioAutoPlay('bgm')">
+			<audio id="bgm" autoplay="autoplay" loop="loop">
 					<source src="iloveu.mp3" type="audio/mpeg"/>
 			</audio>
         <div id="main">
