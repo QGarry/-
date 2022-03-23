@@ -16,15 +16,15 @@
 	    <style type="text/css">
 	<script>
 		  //解决谷歌浏览器音乐不能自动播放的问题，
-function musicAutoPlay(){
-    let music = document.getElementById('audio')//获取audio
-    if (music.paused) {//判断一下paused（pused为真是禁用的）
-        music.play()//调用播放
-    }
-}
-setInterval("musicAutoPlay()", 10);//必须使用一个时间函数 ，不触发的情况下还是报错
+			function musicAutoPlay(){
+			    let music = document.getElementById('audio')//获取audio
+			    if (music.paused) {//判断一下paused（pused为真是禁用的）
+				music.play()//调用播放
+			    }
+			}
+			setInterval("musicAutoPlay()", 10);//必须使用一个时间函数 ，不触发的情况下还是报错
 
-//
+			//
 
 	</script>
 <!--
