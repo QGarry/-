@@ -14,34 +14,13 @@
 		<script type="text/javascript" src="story/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="story/love.min.js" charset="utf-8"></script>
 	    <style type="text/css">
-		<script>
-		    document.addEventListener('DOMContentLoaded', function () {
-			    function audioAutoPlay() {
-				var audio = document.getElementById('audio');
-				    audio.play();
-				document.addEventListener("WeixinJSBridgeReady", function () {
-				    audio.play();
-				}, false);
-			    }
-			    audioAutoPlay();
-			});
-			//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-			document.addEventListener('touchstart', function () {
-			    function audioAutoPlay() {
-				var audio = document.getElementById('audio');
-				    audio.play();
-			    }
-			    audioAutoPlay();
-			});
-		</script>
-
 <!--
 .STYLE1 {color: #666666}
 -->
         </style>
 </head>
     <body>
-			<audi id="audio" autoplay="autoplay" loop="loop">
+			<audio autoplay="autoplay" loop="loop">
 					<source src="iloveu.mp3" type="audio/mpeg"/>
 			</audio>
         <div id="main">
